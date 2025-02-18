@@ -21,11 +21,18 @@
 title: Victoria Avis
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a short description of Victoria Avis. 
+  Victoria Avis' work explores international development, political theory, and urban planning in Global South contexts. 
 keywords: >-
-  This is a list of keywords, International Relations, Tori Avis, 
-  Victoria Avis, USAID, MIT, urban design, urban planning, urbanization,
-  africa, subsaharan Africa, Africa, African Urbanism, urbanism, geopolitics
+  Victoria Avis, Victoria, Avis, Tori Avis, MIT, Massachusetts Institute of Technology, DUSP, 
+  Department of Urban Studies and Planning, Department of Urban Studies & Planning, MIT SA+P, 
+  MIT School of Architecture and Planning, MIT School of Architecture & Planning, 
+  The George Washington University, George Washington University, GW, GWU, ESIA, 
+  Elliott School of International Affairs, Elliott School of International Affairs at The George Washington University, 
+  USAID, Falmouth Academy, FA, United States Agency for International Development, Africa, sub-Saharan Africa, 
+  SSA, urban planning, international development, urbanization, political theory, urban theory, critical urban theory, 
+  critical development theory, critical development studies, foreign policy, US foreign policy, 
+  U.S. foreign policy, geopolitics, strategy, geopolitical strategy, international affairs, international relations, 
+  IA, IR, MCP, USG, infrastructure, political science, global affairs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://victoria-avis.com" # the base hostname & protocol for your site, e.g. http://example.com
 
