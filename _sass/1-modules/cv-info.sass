@@ -1,0 +1,104 @@
+.cv-container
+    position: relative
+    margin: 0 10% 0 20%
+
+    .info-storage
+        .cv-categories
+            li
+                list-style-type: none
+
+    &::after
+        content: ''
+        position: absolute
+        width: 1.5px
+        height: 100%
+        background: $blue2
+        top: 0px
+        left: -50px
+        margin-left: -3px
+        z-index:-1
+
+.cv-categories
+    h1
+        font-family: $font-stack-two
+        padding-bottom: 0px
+
+    .section-title
+        padding-bottom: 40px
+
+.education-entries, .experience-entries, .travel-entries, .leadership-entries, .award-entries, .competency-entries
+    padding: 0px
+    position: relative
+
+    .line-circle
+        width: 65px
+        height: 65px
+        border-radius: 80%
+        background-color: $green2
+        border: 20px solid $white
+        position: absolute
+        left: -124.5px
+        z-index: 2
+        transform: translateY(15%)
+
+
+    span
+        font-weight: 300
+
+    h2
+        padding-bottom: 10px
+        padding-top: 25px
+
+    h4
+        padding-bottom: .33em
+        font-size: 1.1em
+
+
+    p
+        font-family: $font-stack
+        font-weight: 300
+        font-size: 1.1em
+        padding-left: 3em
+    
+        
+.award-section
+    h1
+        padding-bottom: 25px        
+.award-entries
+    padding: 5px 0px
+
+
+.section-title
+    details
+        color: $blue1
+        font-weight: 300
+        margin-left: 15px
+        summary::marker
+            color: $green1
+        summary:hover
+            cursor: pointer
+        summary::before
+            content: 'Show More'
+        &[open] > summary::before
+            content: ''
+        summary
+            margin-left: -15px
+
+.competency-entries
+    .language-skill-container
+        display: flex
+        align-items: center
+    .language-name
+        width: 5em
+    .language-prof
+        p
+            font-weight: 300
+    .listed-skills
+        p
+            font-weight: 300
+
+
+.leadership-entries
+    details
+        div
+            padding: 5px 0px

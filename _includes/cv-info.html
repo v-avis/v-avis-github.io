@@ -1,0 +1,103 @@
+<div class="cv-container">
+    <div class="info-storage">
+        <ul class="cv-categories">
+            <li class="section-title">
+                <h1>Education</h1>
+                {% for edu in site.data.education %}
+                <ul class="education-entries">
+                    <li>
+                        <div class="line-circle" id="{{ edu.id }}" ></div>
+                        <h2>{{ edu.school }} <span>| {{ edu.department }}</span></h2>
+                        <h4>{{ edu.degree }}</h4>
+                        <p>{{ edu.description1 }}</p>
+                        <p>{{ edu.description2 }}</p>
+                    </li>
+                </ul>
+                {% endfor %}
+            </li>
+            <li class="section-title">
+                <h1>Experience</h1>
+                {% for xp in site.data.experience %}
+                <ul class="experience-entries">
+                    <li>
+                        <div class="line-circle" id="{{ xp.id }}"></div>
+                        <h2>{{ xp.organization }}</h2>
+                        <h4>{{ xp.title }}</h4>
+                        {% for item in xp.bullets %}
+                            <p>{{ item.description }}</p>
+                        {% endfor %}
+                    </li>
+                </ul>
+                {% endfor %}
+            </li>
+            <li class="section-title">
+                <h1>Official Diplomatic Travel</h1>
+                {% for loc in site.data.travel %}
+                <ul class="travel-entries">
+                    <li>
+                        <div class="line-circle" id="{{ loc.id }}"></div>
+                        <h2>{{ loc.location }}</h2>
+                        <details>
+                            <summary></summary>
+                            {{ loc.description }}
+                        </details>
+                    </li>
+                </ul>
+                {% endfor %}
+            </li>
+            <li class="section-title award-section" id="AWARDS">
+                <h1>Awards</h1>
+                {% for award in site.data.awards %}
+                <ul class="award-entries">
+                    <li>
+                        <h4>{{ award.title }}<span>, {{ award.year }}</span></h4>
+                    </li>
+                </ul>
+                {% endfor %}
+            </li>
+            <li class="section-title">
+                <h1>Leadership & Service</h1>
+                {% for item in site.data.leadership %}
+                <ul class="leadership-entries">
+                    <li>
+                        <div class="line-circle" id="{{ item.id }}"></div>
+                        <h2>{{ item.organization }}</h2>
+                        <details>
+                            <summary></summary>
+                            {% for bullet in item.bullets %}
+                            <div>{{ bullet.description }}</div>
+                            {% endfor %}                        
+                        </details>
+                    </li>
+                </ul>
+                {% endfor %}
+            </li>
+            <li class="section-title">
+                <h1>Competencies</h1>
+                {% for skill in site.data.competencies %}
+                <ul class="competency-entries">
+                    <li>
+                        <h2>{{ skill.category }}</h2>
+                        {% if skill.category == "Languages" %}
+                        {% for lang in skill.skills %}
+                        <div class="language-skill-container">
+                            <div  class="language-name">
+                                <p>{{ lang.language }}</p>
+                            </div>
+                            <div class="language-prof">
+                                <p>{{ lang.proficiency }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <div class="listed-skills">
+                            <p>{{ skill.skills }}</p>
+                        </div>
+                        {% endif %}
+                    </li>
+                </ul>
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+</div>

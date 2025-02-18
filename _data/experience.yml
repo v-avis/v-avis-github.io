@@ -1,0 +1,72 @@
+- id: ORANGE
+  organization: "Orange Architects"
+  title: "Urban Planning Research Fellow, Ukraine Reconstruction & Resilience"
+- id: USAID
+  organization: "U.S. Agency for International Development (USAID)"
+  title: "Front Office Staff, Office of the Assistant Administrator in the Bureau for Africa"
+#   bullets: 
+#     - description: >
+#         Supported teams working on high-priority issues
+#         (including the Northern Ethiopia conflict, the
+#         Horn of Africa drought humanitarian response, & 
+#         implementation of the USAID climate strategy)
+#     - description: >
+#         Co-managed logistical support for NSC engagements
+#         (reserve SCIFS, coordinate intra-agency participation
+#         for meetings with multiple USAID equitites, liaising with
+#         NSC Africa Directorate)
+#     - description: >
+#         Streamlined Bureau operating procedures to increase efficiency
+#         and minimize administrative burdens; develop Standard
+#         Operating Procedures for senior- & entry-level functions
+- id: ZEMI
+  organization: "Zemitek, LLC &ndash; USAID Contractor"
+  title: "Front Office Staff, Office of the Assistant Administrator in the Bureau for Africa"
+#   bullets: 
+#     - description: >
+#         Oversaw the clearance process for Action Memos, Info Memos,
+#         letters, and briefing documents as the Bureau's designated Correspondence
+#         Control Contact
+#     - description: >
+#         Liaised with document drafters and key stakeholders to ensure deliverables
+#         were thoughtfully prepared and complete for review and use by
+#         Bureau principals
+#     - description: >
+#         Coordinated calendars and schedules for the Assistant Administrator and
+#         Senior Deputy Assistant Administrator, the two most-senior positions in the
+#         Bureau
+- id: BIAFRA
+  organization: "Resilient Networks for Inclusive Digital Humanities"
+  title: "Biafra Project Research Assistant"
+#   bullets: 
+#     - description: >
+#         Collected 134 open-source data related to the Nigerian Civil War and Biafra from NGO and
+#         government archives to create a Knowledge Library of data publicly available for researchers
+#     - description: >
+#         Coordinated resource-sharing with experts in the field; encouraged experts to develop or
+#         adapt original research for publication directly on website
+#     - description: >
+#         Translated captions and titles to ensure information is accessible in French and English
+- id: AQ
+  organization: "Anthropological Quarterly (AQ)"
+  title: "Editorial Assistant "
+#   bullets: 
+#     - description: >
+#        Copyedited book reviews and articles at all stages of editing with particular attention to
+#         detail to ensure logical clarity and readability
+#     - description: >
+#         Collaborated with authors to discuss comments regarding proposed edits
+#     - description: >
+#         Gathered and analyzed research to help the Editor-in-Chief finish his now-published book- organization: "Resilient Networks for Inclusive Digital Humanities"
+- id: ANGONET
+  organization: "Arusha NGO Network (ANGONET)"
+  title: "Development Intern"
+#   bullets: 
+#     - description: >
+#         Began a grant proposal requesting €50,000 to fund intimate workshops designed to
+#         empower women to participate actively in civil society and local political processes
+#     - description: >
+#         Attended meetings with Tanzanian government officials to advocate for swift action
+#         to combat malnutrition as defined by the UN’s Millennium Development Goals
+#     - description: >
+#         Streamlined and updated ANGONET’s website and email server systems  

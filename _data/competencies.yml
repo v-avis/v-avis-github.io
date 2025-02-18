@@ -1,0 +1,13 @@
+- category: "Languages"
+  skills: 
+    - language: "French"
+      proficiency: "working proficiency"
+    - language: "Wolof"
+      proficiency: "novice proficiency"
+    - language: "Swahili" 
+      proficiency: "novice proficiency"
+
+- category: "Skills"
+  skills: >
+        QGIS, Adobe Suite (Illustrator, Photoshop, InDesign), diplomatic negotiation, 
+        public speaking, leadership & team management, amateur boat restoration

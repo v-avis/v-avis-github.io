@@ -1,0 +1,164 @@
+.world-map
+  width: 100%
+  // max-width: 1100px
+  margin: 0 auto
+  padding: 1em 1em 0em 1em 
+  position: relative
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+.pin
+  background: $green2
+  position: absolute
+  width: 0.7em
+  height: 0.7em
+  border-radius: 50% 
+
+  span
+    opacity: 0
+    white-space: nowrap
+    position: absolute
+    left: 1.5em
+    top: 50%
+    transform: translateY(-50%)
+    background: $green1
+    color: $white
+    text-shadow: -0.5px -0.5px $black
+    border-radius: 3em
+    padding: 0.3em 0.6em 
+    font-size: 0.9em
+    transition: opacity 0.3s
+  
+  &:hover
+    span
+      opacity: 1
+
+// Setting where the label pops up 
+.drc, .gabon, .dakar
+  span
+    left: -125px
+
+.rotterdam
+  span
+    left: -175px
+
+.accra
+  span
+    left: -105px
+
+.pin::before
+  content: ''
+  background: $green2
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  animation: pulse 3s ease-in-out infinite
+  animation-delay: 0s
+
+.world-map a:nth-of-type(1) .pin::before
+  animation-delay: 0.1s
+
+.world-map a:nth-of-type(2) .pin::before
+  animation-delay: 0.6s
+
+.world-map a:nth-of-type(3) .pin::before
+  animation-delay: 1.1s
+
+.world-map a:nth-of-type(4) .pin::before
+  animation-delay: 2.1s
+
+.world-map a:nth-of-type(5) .pin::before
+  animation-delay: 2.2s
+
+.world-map a:nth-of-type(6) .pin::before
+  animation-delay: 2.3s
+
+.world-map a:nth-of-type(7) .pin::before
+  animation-delay: 1.3s
+
+.world-map a:nth-of-type(8) .pin::before
+  animation-delay: 1.2s
+
+.world-map a:nth-of-type(9) .pin::before
+  animation-delay: 0.2s
+
+.world-map a:nth-of-type(10) .pin::before
+  animation-delay: 0.3s
+
+
+.title
+  // position: relative
+  // top: -30px
+  text-align: center
+  h2
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-size: 2.5em
+    font-weight: 300
+    font-family: $font-stack-two
+
+
+// Setting location of dots
+.dc
+  top: 36.3%
+  left: 32.1%
+
+.dakar
+  top: 51%
+  left: 45.5%
+
+.cambridge
+  top: 32.5%
+  left: 33.2%
+
+.cdmx
+  top: 45%
+  left: 26.75%
+
+.ukraine
+  top: 27.5%
+  left: 56.5%
+
+.rotterdam
+  top: 26.3%
+  left: 50.2%
+
+.gabon
+  top: 61.6%
+  left: 51.7%
+
+.drc
+  top: 65%
+  left: 52.5%
+
+.lakes
+  top: 62.6%
+  left: 58%
+
+.mashariki
+  top: 53%
+  left: 57.6%
+
+.accra
+  top: 55.7%
+  left: 48.8%
+
+
+
+@keyframes pulse
+  100%
+    opacity: 0
+    transform: translate(-50%, -50%) scale(2.5)
+
+@media screen and (max-width: 600px)
+  .title
+    padding-top: 10px
+    h2
+      font-size: 1.75em

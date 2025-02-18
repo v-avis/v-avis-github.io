@@ -1,0 +1,12 @@
+- school: "Massachusetts Institute of Technology"
+  department: "Department of Urban Studies & Planning"
+  degree: "Master of City Planning Candidate, International Development Group"
+  description1: "Research Assistant to Bish Sanyal, PhD"
+  description2: "Research Assistant to David Gamble, AIA AICP"
+  id: MIT
+- school: "The George Washington University"
+  department: "Elliott School of International Affairs"
+  degree: "B.A. in International Affairs, Minor in Applied Ethics"
+  description1: "Concentrations in Conflict Resolution & Sub-Saharan African Geopolitics"
+  description2: "University Honors Program Graduate"
+  id: GW

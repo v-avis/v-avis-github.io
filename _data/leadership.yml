@@ -1,0 +1,44 @@
+- id: MCP
+  organization: MIT Master in City Planning Committee
+  role: Student Representative
+  bullets: 
+    - description: >
+        Nominated and confirmed as a student advisor to the MCP Committee, 
+        which oversees rules and regulations of the MCP degree while
+        considering the academic and social welfare of students
+- id: DLAB
+  organization: MIT Development Lab (D-Lab)
+  role: Research Trip Coordinator
+  bullets: 
+    - description: >
+        Planned and organized all travel logistics for 9 undergraduate & graduate students in conjunction
+        with MIT’s Gender & Development class
+    - description: >
+        Liaised with partner organization staff in Kenya to ensure successful participation of local staff and
+        key community members; assisted in navigating cross-cultural barriers between local staff & MIT students
+    - description: >
+        Participated in a multi-day workshop designed to understand socio-economic and cultural challenges
+        facing teenage parents in rural Homa Bay County, Kenya
+- id: USAID-YP  
+  organization: Young Professionals @ USAID
+  role: Participatory Member
+  bullets: 
+    - description: >
+        Attended regular meetings to discuss the experiences of young professionals working at
+        USAID, with a specific emphasis on equity across varying entry-level federal hiring mechanisms  
+- id: JPAC
+  organization: JPAC Institute
+  role: English Language Teaching Assistant / Conversation Partner
+  bullets: 
+    - description: >
+        Prepared weekly conversation topics suitable for 5 beginner students age 19-33
+    - description: >
+        Encouraged active participation in group activities with limited supervision
+- id: ETA
+  organization: The ETA Society for Global Affairs
+  role: Vice President
+  bullets: 
+    - description: >
+        Lead weekly meetings with 9 committee chairs to ensure smooth internal operations
+    - description: >
+        Supervised the planning of professional, networking, and social events for sisters    
