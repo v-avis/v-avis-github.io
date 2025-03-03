@@ -1,6 +1,14 @@
 .header-container
     display: flex
-    margin: 26px
+    padding: 26px 26px
+    position: sticky
+    top: 0px
+    background-color: $white
+
+    &.stuck
+        box-shadow: 0px 1px 10px $blue2
+        z-index: 500
+
     .id-box
         width: 50%
         display: flex
@@ -22,3 +30,4 @@
         display: flex
         align-items: center
         justify-content: flex-end
+

@@ -1,6 +1,7 @@
 - id: MCP
   organization: MIT Master in City Planning Committee
   role: Student Representative
+  location: Cambridge, MA
   bullets: 
     - description: >
         Nominated and confirmed as a student advisor to the MCP Committee, 
@@ -9,6 +10,7 @@
 - id: DLAB
   organization: MIT Development Lab (D-Lab)
   role: Research Trip Coordinator
+  location: Cambridge, MA & Oyugis, Kenya
   bullets: 
     - description: >
         Planned and organized all travel logistics for 9 undergraduate & graduate students in conjunction
@@ -22,6 +24,7 @@
 - id: USAID-YP  
   organization: Young Professionals @ USAID
   role: Participatory Member
+  location: Washington, D.C.
   bullets: 
     - description: >
         Attended regular meetings to discuss the experiences of young professionals working at
@@ -29,6 +32,7 @@
 - id: JPAC
   organization: JPAC Institute
   role: English Language Teaching Assistant / Conversation Partner
+  location: Dakar, Senegal
   bullets: 
     - description: >
         Prepared weekly conversation topics suitable for 5 beginner students age 19-33
@@ -37,8 +41,9 @@
 - id: ETA
   organization: The ETA Society for Global Affairs
   role: Vice President
+  location: Washington, D.C.
   bullets: 
     - description: >
-        Lead weekly meetings with 9 committee chairs to ensure smooth internal operations
+        As Vice President, lead weekly meetings with 9 committee chairs to ensure smooth internal operations
     - description: >
         Supervised the planning of professional, networking, and social events for sisters    

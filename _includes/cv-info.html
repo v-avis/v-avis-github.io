@@ -6,8 +6,9 @@
                 {% for edu in site.data.education %}
                 <ul class="education-entries">
                     <li>
-                        <div class="line-circle" id="{{ edu.id }}" ></div>
+                        <div class="line-circle"><span class="anchor" id="{{ edu.id }}"></span></div>
                         <h2>{{ edu.school }} <span>| {{ edu.department }}</span></h2>
+                        <h4 class="item-loc">{{ edu.location }}</h4>
                         <h4>{{ edu.degree }}</h4>
                         <p>{{ edu.description1 }}</p>
                         <p>{{ edu.description2 }}</p>
@@ -20,8 +21,13 @@
                 {% for xp in site.data.experience %}
                 <ul class="experience-entries">
                     <li>
-                        <div class="line-circle" id="{{ xp.id }}"></div>
+                        <div class="line-circle"><span class="anchor" id="{{ xp.id }}"></span></div>
+                        {% if xp.pipe-info %}
+                        <h2>{{ xp.organization }} <span>| {{ xp.pipe-info }}</span></h2>
+                        {% else %}
                         <h2>{{ xp.organization }}</h2>
+                        {% endif %}
+                        <h4 class="item-loc">{{ xp.location }}</h4>
                         <h4>{{ xp.title }}</h4>
                         {% for item in xp.bullets %}
                             <p>{{ item.description }}</p>
@@ -35,7 +41,7 @@
                 {% for loc in site.data.travel %}
                 <ul class="travel-entries">
                     <li>
-                        <div class="line-circle" id="{{ loc.id }}"></div>
+                        <div class="line-circle"><span class="anchor" id="{{ loc.id }}"></span></div>
                         <h2>{{ loc.location }}</h2>
                         <details>
                             <summary></summary>
@@ -60,8 +66,9 @@
                 {% for item in site.data.leadership %}
                 <ul class="leadership-entries">
                     <li>
-                        <div class="line-circle" id="{{ item.id }}"></div>
+                        <div class="line-circle"><span class="anchor" id="{{ item.id }}"></span></div>
                         <h2>{{ item.organization }}</h2>
+                        <h4 class="item-loc">{{ item.location }}</h4>
                         <details>
                             <summary></summary>
                             {% for bullet in item.bullets %}

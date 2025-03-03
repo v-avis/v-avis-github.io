@@ -1,9 +1,12 @@
 - id: ORANGE
   organization: "Orange Architects"
   title: "Urban Planning Research Fellow, Ukraine Reconstruction & Resilience"
+  location: Rotterdam, Netherlands
 - id: USAID
   organization: "U.S. Agency for International Development (USAID)"
-  title: "Front Office Staff, Office of the Assistant Administrator in the Bureau for Africa"
+  title: "Front Office Staff, Office of the Assistant Administrator"
+  pipe-info: "Bureau for Africa"
+  location: Washington, D.C.
 #   bullets: 
 #     - description: >
 #         Supported teams working on high-priority issues
@@ -22,6 +25,7 @@
 - id: ZEMI
   organization: "Zemitek, LLC &ndash; USAID Contractor"
   title: "Front Office Staff, Office of the Assistant Administrator in the Bureau for Africa"
+  location: Washington, D.C.
 #   bullets: 
 #     - description: >
 #         Oversaw the clearance process for Action Memos, Info Memos,
@@ -38,6 +42,7 @@
 - id: BIAFRA
   organization: "Resilient Networks for Inclusive Digital Humanities"
   title: "Biafra Project Research Assistant"
+  location: Washington, D.C.
 #   bullets: 
 #     - description: >
 #         Collected 134 open-source data related to the Nigerian Civil War and Biafra from NGO and
@@ -50,6 +55,7 @@
 - id: AQ
   organization: "Anthropological Quarterly (AQ)"
   title: "Editorial Assistant "
+  location: Washington, D.C.
 #   bullets: 
 #     - description: >
 #        Copyedited book reviews and articles at all stages of editing with particular attention to
@@ -61,6 +67,7 @@
 - id: ANGONET
   organization: "Arusha NGO Network (ANGONET)"
   title: "Development Intern"
+  location: Arusha, Tanzania
 #   bullets: 
 #     - description: >
 #         Began a grant proposal requesting €50,000 to fund intimate workshops designed to

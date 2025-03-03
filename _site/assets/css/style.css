@@ -433,7 +433,7 @@ p {
 .nav-wrap .navigation li a.active {
   text-decoration-color: #c2f7ca;
   text-decoration-thickness: 2px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .nav-wrap .hamburger-icon {
   display: none;
@@ -504,7 +504,14 @@ p {
 }
 .header-container {
   display: flex;
-  margin: 26px;
+  padding: 26px 26px;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+}
+.header-container.stuck {
+  box-shadow: 0px 1px 10px #a3b9c9;
+  z-index: 500;
 }
 .header-container .id-box {
   width: 50%;
@@ -859,7 +866,7 @@ p {
 .nav-wrap-lander .navigation li a.active {
   text-decoration-color: #c2f7ca;
   text-decoration-thickness: 2px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .cv-container {
@@ -908,7 +915,7 @@ p {
   font-weight: 300;
 }
 .education-entries h2, .experience-entries h2, .travel-entries h2, .leadership-entries h2, .award-entries h2, .competency-entries h2 {
-  padding-bottom: 10px;
+  padding-bottom: 5.808px;
   padding-top: 25px;
 }
 .education-entries h4, .experience-entries h4, .travel-entries h4, .leadership-entries h4, .award-entries h4, .competency-entries h4 {
@@ -967,6 +974,15 @@ p {
 
 .leadership-entries details div {
   padding: 5px 0px;
+}
+
+.anchor {
+  position: absolute;
+  transform: translateY(-120px);
+}
+
+.item-loc {
+  font-style: italic;
 }
 
 .writing-main-container {
