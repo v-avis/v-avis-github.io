@@ -987,19 +987,20 @@ p {
 
 .writing-main-container {
   margin: 0 20%;
+  padding-top: 30px;
 }
 
 .card {
   position: relative;
   width: 100%;
   height: 154px;
-  color: #ffffff;
+  color: #4e7a9b;
   transition: 0.5s;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-5px);
 }
 .card::before {
   content: "";
@@ -1008,8 +1009,9 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(45deg, #c2f7ca, #a3b9c9);
+  background: #ffffff;
   border-radius: 1.2em;
+  z-index: 3;
 }
 .card::after {
   content: "";
@@ -1018,8 +1020,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #c2f7ca, #a3b9c9);
-  filter: blur(30px);
+  background: #a3b9c9;
+  filter: blur(10px);
 }
 .card .content {
   position: relative;
