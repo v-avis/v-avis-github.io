@@ -1,51 +1,8 @@
 .writing-main-container
     margin: 0 20%
     padding-top: 30px
+    display: flex
+    flex-direction: row
 
-.card
-    position: relative
-    width: 100%
-    height: 154px
-    color: $blue1
-    transition: 0.5s
-    cursor: pointer
-    margin-bottom: 30px
-
-    &:hover
-        transform: translateY(-5px)
-
-    &::before
-        content: ""
-        width: 100%
-        height: 100%
-        position: absolute
-        top: 0
-        left: 0
-        // background: linear-gradient(45deg, $green2, $blue2)
-        background: $white
-        border-radius: 1.2em
-        z-index: 3
-    
-    &::after
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        // background: linear-gradient(45deg, $green2, $blue2)
-        background: $blue2
-        filter: blur(10px)
-
-    .content
-        position: relative
-        padding: 10px
-        z-index: 10
-        width: 100%
-        height: 100%
-        display: flex
-        align-items: center
-        justify-content: center
-        font-weight: 400
-        font-size: 1.5em
-
+    .column
+        border: 5px solid $black
