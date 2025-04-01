@@ -4,7 +4,8 @@
     display: flex
 
 .column
-    border: 1px solid $black
+    margin: 0px 12px
+    height: 100vh
     flex: 1
     flex-shrink: 0
 
@@ -13,12 +14,15 @@
     flex-flow: row wrap
     align-items: flex-start
 
+.box-tbd
+    top: 200px
+
 .shape1
     width: 100%
     aspect-ratio: 2 / 1
 
 .shape2
-    width: 50%
+    width: 46%
     aspect-ratio: 1 / 1
     flex: 1
     flex-shrink: 1
@@ -37,7 +41,9 @@
     color: $blue1
     transition: 0.5s
     cursor: pointer
-    margin-bottom: 30px
+    margin: 0px
+    display: flex
+    
 
     &:hover
         transform: translateY(-5px)
@@ -67,10 +73,46 @@
         position: relative
         padding: 10px
         z-index: 10
-        width: 100%
         height: 100%
-        display: flex
-        align-items: center
-        justify-content: center
         font-weight: 400
         font-size: 1.5em
+        flex: 3
+
+        h2
+            font-size: 1.5em
+        p
+            font-size: 0.8em
+
+        a
+            font-style: none
+            color: $green1
+            font-size: 0.7em
+
+            &:hover
+                color: $green2
+           
+
+    .piece-image
+        position: relative
+        z-index: 10
+        flex: 2
+        padding: 10px
+        
+        .post-feat-img
+            display: block
+            width: 100%
+            height: 100%
+            border-radius: 10px
+            background: 
+                size: cover
+                position: center center
+                repeat: no-repeat
+
+    .box-tbd-text
+        color: $white
+        background-color: $green1
+        border-radius: 0.8em
+        display: flex
+        align-content: center
+        align-items: center
+        justify-content: center
