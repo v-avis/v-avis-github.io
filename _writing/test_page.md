@@ -1,9 +1,10 @@
 ---
 title: "SILT"
 description: "A poem by T Dawg"
-image: ""
+image: "silt.jpeg"
 layout: "writing-lander"
-type: text
+cardsize: "shape1"
+column: 1
 slug: silt-url
 ---
 
