@@ -55,3 +55,8 @@ exclude:
 
 sass:
   sass_dir: _sass
+
+collections: 
+  writing: 
+    output: true
+    permalink: /writing/:slug/
