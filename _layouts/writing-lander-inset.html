@@ -4,5 +4,29 @@ layout: default
 <!-- Header -->
 {% include header.html %}
 
+<div class="landing-page-container">
+    <div class="frontmatter-container">
+        <div class="piece-image">
+            <img src="{{ site.baseurl }}{{ site.pathToImgBin }}{{ page.image }}" class="img-actual" />
+        </div>
+        <div class="piece-text">
+            <h1>{{ page.title }}</h1>
+            {% if page.venue %}
+            <h2>{{ page.venue }}</h2>
+            <p>{{ page.long-description }}</p>
+            {% endif %}
+            {% if page.venue-url %}
+            <a class="venue-btn" href="{{ page.venue-url | escape }}" target="_blank" rel="noopener noreferrer">
+                Check out SILT here!
+            </a>            
+            {% endif %}
+
+        </div>
+    </div>
+    <div class="inset-container">
+        {{ page.slug }}
+    </div>
+</div>
+
  <!-- Footer -->
 {% include footer.html %}

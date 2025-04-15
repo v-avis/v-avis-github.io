@@ -1030,7 +1030,6 @@ p {
   position: relative;
   color: #4e7a9b;
   transition: 0.5s;
-  cursor: pointer;
   margin: 0px;
   display: flex;
 }
@@ -1162,6 +1161,59 @@ p {
 .writing-page .footer-container-sticker {
   position: fixed;
   bottom: 0;
+}
+
+.landing-page-container {
+  margin: 0 20%;
+}
+
+.writing-landers {
+  background-color: #ffffff;
+}
+.writing-landers h1, .writing-landers h2, .writing-landers h3, .writing-landers h4, .writing-landers p {
+  color: #4e7a9b;
+  font-weight: 400;
+  margin: 5px 0px;
+}
+.writing-landers h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #6ca888;
+}
+
+.landing-page-container {
+  margin: 0 20%;
+}
+.landing-page-container .frontmatter-container {
+  display: flex;
+}
+.landing-page-container .frontmatter-container .piece-image {
+  flex: 2;
+  margin: 0 10px;
+}
+.landing-page-container .frontmatter-container .piece-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.landing-page-container .frontmatter-container .piece-text {
+  flex: 4;
+}
+.landing-page-container .frontmatter-container .piece-text .venue-btn {
+  background: #6ca888;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.landing-page-container .frontmatter-container .piece-text .venue-btn:hover {
+  background-color: #c2f7ca;
 }
 
 /*# sourceMappingURL=style.css.map */

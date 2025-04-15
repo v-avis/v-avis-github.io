@@ -1,0 +1,50 @@
+.writing-landers
+    background-color: $white
+
+    h1, h2, h3, h4, p
+        color: $blue1
+        font-weight: 400
+        margin: 5px 0px
+
+    
+    h1
+        text-transform: uppercase
+        letter-spacing: 5px
+        color: $green1
+
+.landing-page-container
+    margin: 0 20%
+
+    .frontmatter-container
+        display: flex
+
+        .piece-image
+            flex: 2
+            margin: 0 10px 
+
+            img
+                display: block
+                width: 100%
+                height: 100%
+                border-radius: 10px
+                background: 
+                    size: cover
+                    position: center center
+                    repeat: no-repeat
+
+
+        .piece-text
+            flex: 4
+            
+            .venue-btn
+                background: $green1
+                color: $white
+                display: inline-block
+                padding: 0.5em 1em
+                border-radius: 0.4rem
+                cursor: pointer
+                transition: background-color 0.3s ease
+
+                &:hover 
+                    background-color: $green2
+
