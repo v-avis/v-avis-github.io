@@ -7,11 +7,12 @@ long-description: >
 venue: "SILT Vol. 1"
 venue-url: "https://siltmagazine.cargo.site/"
 image: "silt.jpeg"
+file: silt_publication.pdf
+slug: silt-url
 layout: "writing-lander-inset"
 body_class: "writing-landers"
 cardsize: "shape1"
 column: 1
-slug: silt-url
 ---
 
 content for pieces that display directly on the page.
