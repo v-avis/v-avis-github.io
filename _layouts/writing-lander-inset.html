@@ -7,24 +7,32 @@ layout: default
 <div class="landing-page-container">
     <div class="frontmatter-container">
         <div class="piece-image">
-            <img src="{{ site.baseurl }}{{ site.pathToImgBin }}{{ page.image }}" class="img-actual" />
+            <figure>
+                <img src="{{ site.baseurl }}{{ site.pathToImgBin }}{{ page.image }}" class="img-actual" />
+                <figcaption>
+                    <p>{{ page.image-caption }}</p>
+                </figcaption>
+            </figure>
+            
         </div>
         <div class="piece-text">
             <h1>{{ page.title }}</h1>
             {% if page.venue %}
             <h2>{{ page.venue }}</h2>
-            <p>{{ page.long-description }}</p>
-            {% endif %}
             {% if page.venue-url %}
             <a class="venue-btn" href="{{ page.venue-url | escape }}" target="_blank" rel="noopener noreferrer">
-                Find more here!
+                Read {{ page.button-text }} here
             </a>            
+            {% endif %}
+            <p>{{ page.short-description }}</p>
             {% endif %}
 
         </div>
     </div>
+    <div class="piece-description-container">
+        <p>{{ page.long-description }}</p>
+    </div>
     <div class="inset-container">
-        <h2>Read Here</h2>
         <div class="pdf-wrapper">
             <iframe 
                 src="{{ site.baseurl }}/assets/pdf/{{ page.file }}" 

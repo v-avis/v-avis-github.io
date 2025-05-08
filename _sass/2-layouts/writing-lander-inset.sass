@@ -12,27 +12,39 @@
         letter-spacing: 5px
         color: $green1
 
+    h2
+        font-family: $font-stack-two
+
 .landing-page-container
     margin: 0 20%
 
     .frontmatter-container
         display: flex
         align-items: stretch
-
+        
         .piece-image
             flex: 2
             margin: 0 20px 
 
-            img
-                display: block
-                width: 100%
-                height: 100%
-                border-radius: 10px
-                background: 
-                    size: cover
-                    position: center center
-                    repeat: no-repeat
+            figure
+                margin: 0
 
+                img
+                    display: block
+                    width: 100%
+                    height: 100%
+                    border-radius: 10px
+                    background: 
+                        size: cover
+                        position: center center
+                        repeat: no-repeat
+
+                figcaption
+                    p
+                        color: $blue1
+                        font-family: $font-stack
+                        font-size: 0.75em
+                        font-style: italic
 
         .piece-text
             flex: 4
@@ -40,7 +52,8 @@
             flex-direction: column
             justify-content: space-between
             padding: 2px 0
-            
+            text-align: justify
+
             .venue-btn
                 background: $green1
                 color: $white
@@ -54,12 +67,17 @@
                 &:hover 
                     background-color: $green2
 
+    .piece-description-container
+        margin: 0 20px
+
 .inset-container
     margin-top: 40px
     padding: 20px
     background-color: $white
     border-radius: 10px
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+    z-index: 1
+    position: relative
 
     h2
         font-size: 1.5em

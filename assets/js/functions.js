@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const header = document.querySelector(".header-container"); // Replace with your navbar selector
+    const header = document.querySelector(".header-container"); 
     const stickyClass = "stuck"; // The class to add when stuck
 
     function checkScroll() {
