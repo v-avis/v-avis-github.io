@@ -69,10 +69,11 @@
                         <div class="line-circle"><span class="anchor" id="{{ item.id }}"></span></div>
                         <h2>{{ item.organization }}</h2>
                         <h4 class="item-loc">{{ item.location }}</h4>
+                        <h4>{{ item.role }}</h4>
                         <details>
                             <summary></summary>
                             {% for bullet in item.bullets %}
-                            <div>{{ bullet.description }}</div>
+                            <div>{{ bullet.description | markdownify }}</div>
                             {% endfor %}                        
                         </details>
                     </li>

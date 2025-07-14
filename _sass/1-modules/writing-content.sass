@@ -118,22 +118,29 @@
             font-size: 1.1em
 
         h2
-            font-size: 1.5em
+            font-size: 1.25em
             word-wrap: break-word
+            text-align: center
+            font-family: $font-stack-two
+            color: $green1
+            text-transform: uppercase
             // Adjust heading size gradually for better responsiveness
             @media (max-width: 1200px)
-                font-size: 1.4em
+                font-size: 1.15em
                 
             @media (max-width: 992px)
-                font-size: 1.3em
+                font-size: 1.05em
                 
             @media (max-width: 767px)
-                font-size: 1.2em
+                font-size: 1.0em
                 
         p
-            font-size: 0.8em
+            font-size: 1em
             word-wrap: break-word
+            text-align: center
 
+            span
+                font-style: italic
         a
             font-style: none
             color: $green1
@@ -146,7 +153,7 @@
         position: relative
         z-index: 4
         flex: 2
-        margin: 10px
+        margin: 10px 0 10px 10px
         background-size: cover
         background-position: center center
         background-repeat: no-repeat
@@ -154,9 +161,11 @@
         
         // Add gradual height adjustments for better transition
         @media (max-width: 992px)
+            margin: 10px 10px 0px 10px
             min-height: 200px
             
         @media (max-width: 767px)
+            margin: 10px 10px 0px 10px
             min-height: 180px
         
         .post-feat-img

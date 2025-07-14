@@ -7,6 +7,18 @@
         Nominated and confirmed as a student advisor to the MCP Committee, 
         which oversees rules and regulations of the MCP degree while
         considering the academic and social welfare of students
+- id: RURAL
+  organization: RuralMIT
+  role: Founding Member
+  location: Cambridge, MA
+  bullets: 
+    - description: >
+        Developed a new student organization, focused on the specific experiences of rural
+        communities, to address historic underrepresentation of rurality within planning practice
+    - description: >
+        Hosted an inaugural summit, *Rural Futures*, to bring together planning professionals
+        and academics who live or work in rural places, creating opportunities for meaningful advancement
+        of rural planning
 - id: DLAB
   organization: MIT Development Lab (D-Lab)
   role: Research Trip Coordinator
@@ -31,7 +43,7 @@
         USAID, with a specific emphasis on equity across varying entry-level federal hiring mechanisms  
 - id: JPAC
   organization: JPAC Institute
-  role: English Language Teaching Assistant / Conversation Partner
+  role: English Language Teaching Assistant & Conversation Partner
   location: Dakar, Senegal
   bullets: 
     - description: >
