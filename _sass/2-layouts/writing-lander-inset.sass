@@ -1,0 +1,150 @@
+.writing-landers
+    background-color: $white
+
+    h1, h2, h3, h4, p
+        color: $blue1
+        font-weight: 400
+        margin: 5px 0px
+
+    
+    h1
+        text-transform: uppercase
+        letter-spacing: 5px
+        color: $green1
+        font-family: $font-stack-two
+
+    h2
+        font-family: $font-stack-two
+
+.landing-page-container
+    margin: 0 20%
+
+    .frontmatter-container
+        display: flex
+        align-items: stretch
+        
+        .piece-image
+            flex: 2
+            margin: 0 20px 
+
+            figure
+                margin: 0
+
+                img
+                    display: block
+                    width: 100%
+                    height: 100%
+                    border-radius: 10px
+                    background: 
+                        size: cover
+                        position: center center
+                        repeat: no-repeat
+
+                figcaption
+                    p
+                        color: $blue1
+                        font-family: $font-stack
+                        font-size: 0.75em
+                        font-style: italic
+
+        .piece-text
+            flex: 4
+            display: flex
+            flex-direction: column
+            // justify-content: space-between
+            padding: 2px 0
+            text-align: justify
+
+            h2
+                margin: 0px 0px 5px 0px
+
+                span
+                    font-style: italic
+
+            .bottom-group
+                margin-top: 35px
+            .venue-btn
+                background: $green1
+                color: $white
+                display: inline-block
+                padding: 0.5em 1em
+                border-radius: 0.4rem
+                cursor: pointer
+                transition: background-color 0.3s ease
+                align-self: flex-start
+
+                span
+                    font-style: italic
+
+                &:hover 
+                    background-color: $green2
+
+    .piece-description-container
+        margin: 0 20px
+        p
+            font-family: $font-stack
+
+.inset-container
+    margin-top: 40px
+    padding: 20px
+    background-color: $white
+    border-radius: 10px
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+    z-index: 1
+    position: relative
+
+    h2
+        font-size: 1.5em
+        margin-bottom: 15px
+        color: $green1
+        letter-spacing: 2px
+
+    .pdf-wrapper
+        position: relative
+
+        iframe
+            border: none
+            border-radius: 8px
+            width: 100%
+            height: 600px
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1)
+
+        .pdf-fallback
+            margin-top: 10px
+            font-size: 0.9em
+            color: $blue1
+
+            a
+                color: $green1
+                text-decoration: underline
+
+                &:hover
+                    color: $green2
+
+
+
+@media screen and (max-width: 768px)
+    .landing-page-container
+        margin: 0 5% // Less side margin on mobile
+
+        .frontmatter-container
+            flex-direction: column // 🔄 Stack vertically
+
+            .piece-image,
+            .piece-text
+                margin: 10px 0 // Spacing between stacked sections
+
+            .piece-image
+                img
+                    height: auto // 📸 Let the image size naturally on mobile
+                    max-height: 300px // Optional: prevent it from being too tall
+                    object-fit: cover
+
+            .piece-text
+                display: flex
+                flex-direction: column
+                justify-content: flex-start // 🧘 Return to natural flow
+                align-items: flex-start
+
+                .venue-btn
+                    margin-top: 1em // Adds space from paragraph if not pushed

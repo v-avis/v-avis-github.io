@@ -1,5 +1,193 @@
 .writing-main-container
-    height: 79vh
+    margin: 0 10%
+    padding-top: 30px
+    padding-bottom: 200px
     display: flex
-    justify-content: center
-    padding-top: 180px
+    // Mobile changes
+    @media (max-width: 767px)
+        margin: 0 5%
+        flex-direction: column
+        padding-bottom: 0px
+
+.column
+    margin: 0px 12px
+    // Changed from fixed height to min-height to allow content to flow
+    min-height: 50px
+    flex: 1
+    flex-shrink: 0
+    // Mobile changes
+    @media (max-width: 767px)
+        margin: 0px 0px 24px 0px
+        width: 100%
+
+.c2
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-start
+
+.box-tbd
+    // Restore the top offset for laptop view
+    position: relative
+    top: 200px
+    // Remove the top offset on mobile
+    @media (max-width: 767px)
+        top: 0
+
+.shape1
+    width: 100%
+    aspect-ratio: 2 / 1
+    // Adjust aspect ratio for mobile if needed
+    @media (max-width: 767px)
+        aspect-ratio: 16 / 9
+
+.shape2
+    width: 46%
+    aspect-ratio: 1 / 1
+    flex: 1
+    flex-shrink: 1
+    flex-basis: auto
+    // Full width on mobile
+    @media (max-width: 767px)
+        width: 100%
+
+.shape3
+    width: 50%
+    aspect-ratio: 1 / 2
+    // Full width on mobile
+    @media (max-width: 767px)
+        width: 100%
+        aspect-ratio: 1 / 1.5
+
+.card
+    position: relative
+    color: $blue1
+    transition: 0.5s
+    margin: 0px 0px 20px 0px
+    display: flex
+    
+    // Add intermediate breakpoint to handle the transition better
+    @media (max-width: 992px)
+        flex-direction: column
+        margin-bottom: 30px
+
+    &:hover
+        transform: translateY(-5px)
+
+    &::before
+        content: ""
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background: $white
+        border-radius: 1.2em
+        z-index: 3
+    
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: $blue2
+        filter: blur(10px)
+
+    .piece-text
+        position: relative
+        padding: 10px
+        z-index: 4
+        height: 100%
+        font-weight: 400
+        font-size: 1.5em
+        flex: 3
+        display: flex
+        justify-content: space-around
+        flex-direction: column
+        
+        // Create graduated font size changes for smoother transition
+        @media (max-width: 1200px)
+            font-size: 1.3em
+            
+        @media (max-width: 992px)
+            font-size: 1.2em
+            padding: 15px 10px 10px 10px
+            
+        @media (max-width: 767px)
+            font-size: 1.1em
+
+        h2
+            font-size: 1.25em
+            word-wrap: break-word
+            text-align: center
+            font-family: $font-stack-two
+            color: $green1
+            text-transform: uppercase
+            // Adjust heading size gradually for better responsiveness
+            @media (max-width: 1200px)
+                font-size: 1.15em
+                
+            @media (max-width: 992px)
+                font-size: 1.05em
+                
+            @media (max-width: 767px)
+                font-size: 1.0em
+                
+        p
+            font-size: 1em
+            word-wrap: break-word
+            text-align: center
+
+            span
+                font-style: italic
+        a
+            font-style: none
+            color: $green1
+            font-size: 0.7em
+
+            &:hover
+                color: $green2
+           
+    .piece-image
+        position: relative
+        z-index: 4
+        flex: 2
+        margin: 10px 0 10px 10px
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        border-radius: 10px
+        
+        // Add gradual height adjustments for better transition
+        @media (max-width: 992px)
+            margin: 10px 10px 0px 10px
+            min-height: 200px
+            
+        @media (max-width: 767px)
+            margin: 10px 10px 0px 10px
+            min-height: 180px
+        
+        .post-feat-img
+            display: block
+            width: 100%
+            height: 100%
+            border-radius: 10px
+            background: 
+                size: cover
+                position: center center
+                repeat: no-repeat
+
+    .box-tbd-text
+        color: $white
+        background-color: $green1
+        border-radius: 0.8em
+        display: flex
+        align-content: center
+        align-items: center
+        justify-content: center
+
+.card-link-wrapper
+    display: block
+    text-decoration: none
+    color: inherit

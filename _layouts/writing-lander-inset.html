@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<!-- Header -->
+{% include header.html %}
+
+<div class="landing-page-container">
+    <div class="frontmatter-container">
+        <div class="piece-image">
+            <figure>
+                <img src="{{ site.baseurl }}{{ site.pathToImgBin }}{{ page.image }}" class="img-actual" />
+                <figcaption>
+                    <p>{{ page.image-caption }}</p>
+                </figcaption>
+            </figure>
+            
+        </div>
+        <div class="piece-text">
+            <div class="top-group">
+                <h1>{{ page.title }}</h1>
+                {% if page.venue %}
+                <h2>
+                    <span>{{ page.venue }}</span>
+                    {% if page.venue-edition %}
+                        {{ page.venue-edition }}
+                    {% endif %}
+                </h2>
+                {% endif %}
+            </div>
+            <div class="bottom-group">
+                {% if page.venue-url %}
+                <a class="venue-btn" href="{{ page.venue-url | escape }}" target="_blank" rel="noopener noreferrer">
+                    Read <span>{{ page.button-text }}</span> Here
+                </a>            
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="piece-description-container">
+        <br>
+        {{ page.long-description | markdownify }}
+        <br>
+        {{ page.venue-description | markdownify }}
+    </div>
+    <div class="inset-container">
+        <div class="pdf-wrapper">
+            <iframe 
+                src="{{ site.baseurl }}/assets/pdf/{{ page.file }}#toolbar=0" 
+                width="100%" 
+                height="600px" 
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+            <p class="pdf-fallback">
+                Having trouble viewing? 
+                <a href="{{ site.baseurl }}/assets/pdf/{{ page.file }}" target="_blank" rel="noopener noreferrer">Download the PDF here</a>.
+            </p>
+        </div>
+    </div>    
+</div>
+
+ <!-- Footer -->
+{% include footer.html %}

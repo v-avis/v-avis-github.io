@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
@@ -35,6 +35,7 @@ keywords: >-
   IA, IR, MCP, USG, infrastructure, political science, global affairs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://victoria-avis.com" # the base hostname & protocol for your site, e.g. http://example.com
+pathToImgBin: /assets/img/
 
 github:  
 linkedin: https://www.linkedin.com/in/victoriaavis/
@@ -54,3 +55,8 @@ exclude:
 
 sass:
   sass_dir: _sass
+
+collections: 
+  writing: 
+    output: true
+    permalink: /writing/:slug/
