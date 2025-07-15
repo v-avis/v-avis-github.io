@@ -11,7 +11,7 @@ venue-url: "https://siltmagazine.cargo.site/issue-1"
 button-text: "Silt"
 image: "silt.jpeg"
 image-caption: >
-    The canopy of the Congo Basin Rainforest in June, 2022, 
+    The canopy of the Congo Basin Rainforest in June 2022, 
     just outside of Libreville, Gabon. I took this photo on an official
     site visit while working for USAID.
 file: welcome_home.pdf
