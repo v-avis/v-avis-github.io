@@ -1,3 +1,22 @@
+- id: MIT-EDUCOUNCIL
+  organization: MIT Educational Council
+  role: Alumni EC
+  location: DMV
+  bullets: 
+  - description: >
+      Interview prospective MIT undergraduate students to provide the Admissions Committee with a fuller picture
+      of the applicant beyond their written materials
+- id: SHOWMEWHY
+  organization: Show Me Why You Love It MIT 
+  role: Founder & Executive Director
+  location: Cambridge, MA
+  bullets: 
+  - description: >
+      Launched and led a monthly speaker series to build an inclusive platform for curiosity-driven
+      interdisciplinary learning
+  - description: >
+      Curated talks by more than 20 students and fellows that explored unexpected topics of deep personal interest, 
+      fostering community-building across disciplines
 - id: MCP
   organization: MIT Master in City Planning Committee
   role: Student Representative
