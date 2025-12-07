@@ -30,7 +30,7 @@ layout: default
             <div class="bottom-group">
                 {% if page.venue-url %}
                 <a class="venue-btn" href="{{ page.venue-url | escape }}" target="_blank" rel="noopener noreferrer">
-                    Read <span>{{ page.button-text }}</span> Here
+                    Read Here
                 </a>            
                 {% endif %}
             </div>
@@ -42,6 +42,7 @@ layout: default
         <br>
         {{ page.venue-description | markdownify }}
     </div>
+    {% if page.file %}
     <div class="inset-container">
         <div class="pdf-wrapper">
             <iframe 
@@ -56,7 +57,8 @@ layout: default
                 <a href="{{ site.baseurl }}/assets/pdf/{{ page.file }}" target="_blank" rel="noopener noreferrer">Download the PDF here</a>.
             </p>
         </div>
-    </div>    
+    </div>
+    {% endif %}    
 </div>
 
  <!-- Footer -->
