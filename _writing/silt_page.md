@@ -15,7 +15,7 @@ image-caption: >
     just outside of Libreville, Gabon. I took this photo on an official
     site visit while working for USAID.
 file: welcome_home.pdf
-slug: silt-url
+slug: silt
 layout: "writing-lander-inset"
 body_class: "writing-landers"
 cardsize: "shape1"
